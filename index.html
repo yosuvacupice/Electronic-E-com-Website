@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic E-com Website</title>
+    <!-- ===================== CSS =================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ================== FONTS ================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ======================= ICONS ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== HEADER =================== -->
+    <header>
+        <div class="header_container">
+            <div class="header_part_1">
+                <h2>Electro<span>Mart</span></h2>
+                <img src="assets/header_logo_image.png" alt="Logo">
+            </div>
+            <div class="header_part_2">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header_part_3">
+                <button>Login</button>
+                <button>Sign up</button>
+                <i class="ri-shopping-cart-2-line" onclick="window.location.href='cart.html'"></i>
+                <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="header_part_4">
+                <h3>24/7</h3>
+                <img src="assets/header_part_4_image.png" alt="Header Part 4 Image">
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== NAVBAR =================== -->
+    <div class="navbar_container">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+
+    <!-- ==================== SECTION 1 CONTAINER ================= -->
+    <section class="section_1_container">
+        <div class="section_1_left">
+            <h2>Upgrade Your Tech Life</h2>
+            <h3>Top Deals on Smartphones Laptops Smartwatches & More</h3>
+            <p>
+                Discover the best deals on smartphones, laptops, smartwatches, and accessories — all in one place. Whether you're upgrading 
+                your work setup or staying ahead with the latest gadgets, ElectroMart has you covered with unbeatable prices and trusted brands.
+            </p>
+            <div class="section_1_left_flex">
+                <button onclick="window.location.href='categories.html'">Shop Now</button>
+                <button onclick="window.location.href='categories.html'">Explore Now</button>
+            </div>
+        </div>
+        <div class="section_1_right">
+            <img src="assets/section_1_image.png" alt="Section 1 Image">
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 2 CONTAINER ================= -->
+    <section class="section_2_container">
+        <h2>Electro Mart Upcoming Arrivals</h2>
+        <div class="section_2_wrapper">
+            <div class="section_2_fixed_left">
+                <img src="assets/section_2_fixed_image_1.jpg" alt="">
+            </div>
+            <div class="section_2_fixed_right">
+                <img src="assets/section_2_fixed_image_2.jpg" alt="">
+            </div>
+            <div class="section_2_slider" id="section_2_slider">
+                <img class="section_2_slide_img" src="assets/section_2_slider_image_1.jpg">
+                <img class="section_2_slide_img" src="assets/section_2_fixed_image_2.jpg">
+                <img class="section_2_slide_img" src="assets/section_2_slider_image_2.jpg">
+                <img class="section_2_slide_img" src="assets/section_2_fixed_image_1.jpg">
+                <img class="section_2_slide_img" src="assets/section_2_slider_image_2.jpg">
+                <img class="section_2_slide_img" src="assets/section_2_fixed_image_1.jpg">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 3 CONTAINER ================= -->
+    <section class="section_3">
+        <h2>Featured Products</h2>
+        <div class="section_3_container">
+            <div class="section_3_card">
+                <img src="assets/section_3_image_1.png" alt="Iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_3_image_1.png" alt="Iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_3_image_1.png" alt="Iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_3_image_2.png" alt="Apple watch">
+                <h2>Apple watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_3_image_2.png" alt="Apple watch">
+                <h2>Apple watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_3_image_2.png" alt="Apple watch">
+                <h2>Apple watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 4 CONTAINER ================= -->
+    <section class="section_3">
+        <h2>Products Categories</h2>
+        <div class="section_3_container">
+            <div class="section_3_card">
+                <img src="assets/section_4_image_1.png" alt="Smart phone">
+                <h2>Smart phone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_4_image_2.png" alt="Mac book">
+                <h2>Mac book</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_4_image_3.png" alt="Accessories">
+                <h2>Accessories</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card" onclick="window.location.href='watches.html'">
+                <img src="assets/section_4_image_4.png" alt="Apple watch">
+                <h2>Apple watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_4_image_5.png" alt="iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+            <div class="section_3_card">
+                <img src="assets/section_4_image_6.png" alt="Combo sets">
+                <h2>Combo sets</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Add to Carts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 5 CONTAINER ================= -->
+    <section class="section_5">
+        <h2>Why Choose ElectroMart?</h2>
+        <div class="section_5_container">
+            <div class="section_5_blog">
+                <img src="assets/section_5_image_1.png" alt="Latest Tech ">
+                <h2>Latest Tech </h2>
+            </div>
+            <div class="section_5_blog">
+                <img src="assets/section_5_image_2.png" alt="Fast & Free Delivery ">
+                <h2>Fast & Free Delivery </h2>
+            </div>
+            <div class="section_5_blog">
+                <img src="assets/section_5_image_3.png" alt="Easy Returns">
+                <h2>Easy Returns</h2>
+            </div>
+            <div class="section_5_blog">
+                <img src="assets/section_5_image_4.png" alt="Secure Checkout">
+                <h2>Secure Checkout</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 6 CONTAINER ================= -->
+    <section class="section_6">
+        <h2>Customer Reviews</h2>
+        <div class="section_6_container">
+            <div class="section_6_blog">
+                <div>
+                    <img src="assets/section_6_profile_image.png" alt="Aman P">
+                </div>
+                <h2>Aman P.</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Fast shipping and excellent</p>
+            </div>
+            <div class="section_6_blog">
+                <div>
+                    <img src="assets/section_6_profile_image.png" alt="Aman P">
+                </div>
+                <h2>Aman P.</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Fast shipping and excellent</p>
+            </div>
+            <div class="section_6_blog">
+                <div>
+                    <img src="assets/section_6_profile_image.png" alt="Aman P">
+                </div>
+                <h2>Aman P.</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <p>Fast shipping and excellent</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 7 CONTAINER ================= -->
+    <section class="section_7_container">
+        <h2>Subscribe</h2>
+        <p>Get the latest deals & update straight to your inbox</p>
+        <div>
+            <button>Enter Your Email</button>
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ================= -->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_parts">
+                <div class="footer_top_flex">
+                    <h1>Electro<span>Mart</span></h1>
+                    <img src="assets/header_logo_image.png" alt="Logo">
+                </div>
+                <h2>Powering Your Life</h2>
+                <h2>One Gadget at a Time</h2>
+            </div>
+            <div class="footer_top_parts">
+                <h2>ABOUT</h2>
+                <h2>About Us</h2>
+                <h2>Our Services</h2>
+                <h2>Contact</h2>
+                <h2>Terms & Condition</h2>
+            </div>
+            <div class="footer_top_parts">
+                <h2>CATEGORY</h2>
+                <h2>Smartphone</h2>
+                <h2>Televisions</h2>
+                <h2>Laptops</h2>
+                <h2>Mobiles</h2>
+            </div>
+            <div class="footer_top_parts">
+                <h2>CONTACT US</h2>
+                <h2><i class="ri-map-pin-line"></i>Any town, USA 12345</h2>
+                <h2><i class="ri-mail-line"></i>info@example.com</h2>
+                <h2><i class="ri-phone-fill"></i>(123) 456-7890</h2>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_flex">
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+            <p>
+                © 2025 Electro Mart. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPT ================= -->
+    <script src="script.js"></script>
+</body>
+</html>

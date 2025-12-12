@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic E-com Website</title>
+    <!-- ===================== CSS =================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ================== FONTS ================== -->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ======================= ICONS ======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== HEADER =================== -->
+    <header>
+        <div class="header_container">
+            <div class="header_part_1">
+                <h2>Electro<span>Mart</span></h2>
+                <img src="assets/header_logo_image.png" alt="Logo">
+            </div>
+            <div class="header_part_2">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header_part_3">
+                <i class="ri-shopping-cart-2-line" onclick="window.location.href='cart.html'"></i>
+                <i class="fa-regular fa-bell"></i>
+                <img src="assets/header_profile_image.jpg" alt="Aatik Tasneem">
+            </div>
+            <div class="header_part_4">
+                <h3>24/7</h3>
+                <img src="assets/header_part_4_image.png" alt="Header Part 4 Image">
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== NAVBAR =================== -->
+    <div class="navbar_container">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="categories.html" class="navbar_active">Categories</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+
+    <!-- ==================== CATEGORIES SECTION 1 ================= -->
+    <section class="categories_section_1">
+        <h2>Product Categories</h2>
+        <div class="categories_section_1_container">
+            <div class="categories_section_1_box_container">
+                <div class="dropdown_box">
+                    <div class="dropdown_btn">
+                        <i class="ri-filter-3-fill dropdown_icon" data-target="filter-dropdown"></i>
+                        <h2>Filter</h2>
+                    </div>
+                    <div class="dropdown_content" id="filter-dropdown">
+                        <h2>Product Categories</h2>
+                        <div>
+                            <input type="checkbox">
+                            <h3>Rs.500 and Below</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>Rs.501 TO Rs.1000</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>Rs.1001 TO Rs.5000</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>Rs.7001 TO Rs.15000</h3>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+                <div class="dropdown_box">
+                    <div class="dropdown_btn">
+                        <i class="ri-filter-3-fill dropdown_icon" data-target="sort-dropdown"></i>
+                        <h2>Sort</h2>
+                    </div>
+                    <div class="dropdown_content" id="sort-dropdown">
+                        <div>
+                            <input type="checkbox">
+                            <h3>Decrease</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>Low to High</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>High to Low</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>Medium</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categories_section_1_box_container">
+                <div></div>
+                <div class="dropdown_box">
+                    <div class="dropdown_btn">
+                        <i class="ri-filter-3-fill dropdown_icon" data-target="categories-dropdown"></i>
+                        <h2>Categories</h2>
+                    </div>
+                    <div class="dropdown_content" id="categories-dropdown">
+                        <div>
+                            <input type="checkbox">
+                            <h3>MOBILES</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>LAPTOPS</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>4K TV</h3>
+                        </div>
+                        <div>
+                            <input type="checkbox">
+                            <h3>HEAD PHONES</h3>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+            <div class="categories_section_1_flex">
+                <div>
+                    <img src="assets/section_4_image_2.png" alt="Laptops">
+                    <button><a href="#laptops-container">Laptops</a></button>
+                </div>
+                <div>
+                    <img src="assets/section_4_image_6.png" alt="Smartphones">
+                    <button><a href="#smartphones-container">Smartphones</a></button>
+                </div>
+                <div>
+                    <img src="assets/section_4_image_4.png" alt="Smartwatches">
+                    <button><a href="smartwatches-container">Smartwatches</a></button>
+                </div>
+                <div>
+                    <img src="assets/section_4_image_3.png" alt="Accessories">
+                    <button><a href="#accessories-container">Accessories</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES SECTION 2 ================= -->
+    <section class="categories_section_2">
+        <div class="categories_section_2_container" id="smartphones-container">
+            <div class="categories_section_2_blog">
+                <img src="assets/section_3_image_1.png" alt="iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_3_image_1.png" alt="iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_3_image_1.png" alt="iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_3_image_1.png" alt="iphone">
+                <h2>iphone</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <h3>$899</h3>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="categories_section_2_container" id="laptops-container">
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_2.png" alt="Macbook Air">
+                <h2>Macbook Air</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <h3>$1000</h3>
+                    <i class="ri-shopping-cart-2-line"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_2.png" alt="Macbook Air">
+                <h2>Macbook Air</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <h3>$1000</h3>
+                    <i class="ri-shopping-cart-2-line"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_2.png" alt="Macbook Air">
+                <h2>Macbook Air</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <h3>$1000</h3>
+                    <i class="ri-shopping-cart-2-line"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_2.png" alt="Macbook Air">
+                <h2>Macbook Air</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <h3>$1000</h3>
+                    <i class="ri-shopping-cart-2-line"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="categories_section_2_container" id="accessories-container">
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_3.png" alt="Accessories">
+                <h2>Accessories</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_3.png" alt="Accessories">
+                <h2>Accessories</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_3.png" alt="Accessories">
+                <h2>Accessories</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_3.png" alt="Accessories">
+                <h2>Accessories</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="categories_section_2_container" id="smartwatches-container">
+            <div class="categories_section_2_blog" onclick="window.location.href='watches.html'">
+                <img src="assets/section_4_image_4.png" alt="Apple Watch">
+                <h2>Apple Watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_4.png" alt="Apple Watch">
+                <h2>Apple Watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_4.png" alt="Apple Watch">
+                <h2>Apple Watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+            <div class="categories_section_2_blog">
+                <img src="assets/section_4_image_4.png" alt="Apple Watch">
+                <h2>Apple Watch</h2>
+                <div>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="categories_section_2_blog_flex">
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <h3>$899</h3>
+                </div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SECTION 7 CONTAINER ================= -->
+    <section class="section_7_container">
+        <h2>Subscribe</h2>
+        <p>Get the latest deals & update straight to your inbox</p>
+        <div>
+            <button>Enter Your Email</button>
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ================= -->
+    <footer>
+        <div class="footer_top">
+            <div class="footer_top_parts">
+                <div class="footer_top_flex">
+                    <h1>Electro<span>Mart</span></h1>
+                    <img src="assets/header_logo_image.png" alt="Logo">
+                </div>
+                <h2>Powering Your Life</h2>
+                <h2>One Gadget at a Time</h2>
+            </div>
+            <div class="footer_top_parts">
+                <h2>ABOUT</h2>
+                <h2>About Us</h2>
+                <h2>Our Services</h2>
+                <h2>Contact</h2>
+                <h2>Terms & Condition</h2>
+            </div>
+            <div class="footer_top_parts">
+                <h2>CATEGORY</h2>
+                <h2>Smartphone</h2>
+                <h2>Televisions</h2>
+                <h2>Laptops</h2>
+                <h2>Mobiles</h2>
+            </div>
+            <div class="footer_top_parts">
+                <h2>CONTACT US</h2>
+                <h2><i class="ri-map-pin-line"></i>Any town, USA 12345</h2>
+                <h2><i class="ri-mail-line"></i>info@example.com</h2>
+                <h2><i class="ri-phone-fill"></i>(123) 456-7890</h2>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_bottom_flex">
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-line"></i>
+            </div>
+            <p>
+                © 2025 Electro Mart. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPT ================= -->
+    <script src="script.js"></script>
+</body>
+</html>
